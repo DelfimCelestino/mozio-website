@@ -18,27 +18,27 @@ export default function Home() {
                 🇲🇿 Feito para estudantes moçambicanos
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-3xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
               Conecte-se com<br />
               <span className="text-primary">
                 Estudantes Moçambicanos
               </span><br />
               ao Redor do Mundo
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               A rede social exclusiva para estudantes moçambicanos no estrangeiro. 
               Partilhe experiências, encontre eventos e construa conexões.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a 
                 href="#download"
-                className="px-8 py-4 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity font-semibold text-lg"
+                className="px-6 py-3 md:px-8 md:py-4 bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity font-semibold text-sm md:text-lg"
               >
                 Download App
               </a>
               <a 
                 href="#features"
-                className="px-8 py-4 border-2 border-border rounded-full hover:border-foreground transition-colors font-semibold text-lg"
+                className="px-6 py-3 md:px-8 md:py-4 border-2 border-border rounded-full hover:border-foreground transition-colors font-semibold text-sm md:text-lg"
               >
                 Saber Mais
               </a>
@@ -88,10 +88,10 @@ export default function Home() {
       <section id="features" className="py-20 px-6 bg-muted">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-foreground mb-4">
               Tudo que você precisa
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base md:text-xl text-muted-foreground">
               Funcionalidades pensadas para a comunidade estudantil
             </p>
           </div>
@@ -101,10 +101,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Comunidades
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Junte-se a comunidades por universidade, cidade ou país
               </p>
             </div>
@@ -113,10 +113,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Calendar className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Eventos
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Descubra e participe de eventos presenciais ou online
               </p>
             </div>
@@ -125,10 +125,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <MessageCircle className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Chat
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Converse em tempo real com outros estudantes
               </p>
             </div>
@@ -137,10 +137,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Proximidade
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Encontre compatriotas perto de você
               </p>
             </div>
@@ -149,10 +149,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Briefcase className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Oportunidades
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Descubra vagas de emprego, estágios e bolsas de estudo
               </p>
             </div>
@@ -161,10 +161,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <GraduationCap className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Mentorias
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Conecte-se com mentores e partilhe conhecimento
               </p>
             </div>
@@ -173,10 +173,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Lightbulb className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Recursos
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Acesse guias, dicas e recursos para estudantes
               </p>
             </div>
@@ -185,10 +185,10 @@ export default function Home() {
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
                 <Network className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mb-2">
+              <h3 className="text-lg md:text-xl font-bold text-card-foreground mb-2">
                 Networking
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm md:text-base text-muted-foreground">
                 Expanda sua rede profissional e acadêmica
               </p>
             </div>
@@ -224,10 +224,10 @@ export default function Home() {
       <section id="reviews" className="py-20 px-6 bg-muted">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-5xl font-bold text-foreground mb-4">
               O que dizem os estudantes
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-base md:text-xl text-muted-foreground">
               Feedback da nossa comunidade
             </p>
           </div>
@@ -275,10 +275,10 @@ export default function Home() {
       {/* Download Section */}
       <section id="download" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-foreground mb-6">
             Baixe o App Agora
           </h2>
-          <p className="text-xl text-muted-foreground mb-12">
+          <p className="text-base md:text-xl text-muted-foreground mb-12">
             Disponível para iOS e Android. Comece a conectar-se hoje!
           </p>
           

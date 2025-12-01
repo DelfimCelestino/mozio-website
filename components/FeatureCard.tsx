@@ -11,10 +11,10 @@ export default function FeatureCard({ title, description, image, reverse = false
   return (
     <div className={`flex flex-col ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8 md:gap-12`}>
       <div className="flex-1">
-        <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+        <h3 className="text-xl md:text-3xl font-bold text-foreground mb-4">
           {title}
         </h3>
-        <p className="text-muted-foreground text-lg leading-relaxed">
+        <p className="text-muted-foreground text-sm md:text-lg leading-relaxed">
           {description}
         </p>
       </div>

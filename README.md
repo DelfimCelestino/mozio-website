@@ -1,36 +1,214 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📱 Mozio Frontend - App Mobile
 
-## Getting Started
+Aplicativo mobile da plataforma **Mozio** - Rede social para estudantes moçambicanos no estrangeiro.
 
-First, run the development server:
+## 🇲🇿 Sobre o Mozio
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+O **Mozio** é uma plataforma social dedicada a **estudantes moçambicanos que estudam no estrangeiro**. O app permite que estes estudantes se conectem, troquem experiências, se encontrem, participem de eventos e construam uma comunidade forte, mesmo longe de casa.
+
+### 🎯 Missão
+
+Facilitar a conexão e integração de estudantes moçambicanos espalhados pelo mundo, criando uma rede de apoio, partilha de experiências e oportunidades de networking.
+
+### ✨ Funcionalidades
+
+#### 👥 **Perfil & Conexões**
+- Perfil personalizado com foto e informações acadêmicas
+- Sistema de conexões entre estudantes
+- **Detecção de proximidade** - Descubra compatriotas perto de você
+- Feed personalizado de atividades
+
+#### 🏘️ **Comunidades**
+- Comunidades por universidade, cidade ou país
+- Comunidades públicas e privadas
+- Posts exclusivos da comunidade
+- Sistema de solicitação de entrada
+- Partilha de experiências acadêmicas
+
+#### 📅 **Eventos**
+- Criação e descoberta de eventos
+- Eventos presenciais ou online
+- **Filtros por data e país**
+- Sistema de participação
+- Ideal para: meetups, festas, sessões de estudo
+
+#### 📝 **Feed Social**
+- Posts com texto e imagens
+- Curtidas, comentários e compartilhamentos
+- Salvamento de posts favoritos
+- Feed de comunidades
+
+#### 🔔 **Notificações**
+- Notificações em tempo real
+- Alertas de conexões, eventos e comunidades
+- Ações diretas (aceitar/rejeitar)
+
+#### 💬 **Chat**
+- Mensagens privadas
+- Conversas em tempo real
+- Networking facilitado
+
+## 🚀 Começar
+
+### Pré-requisitos
+
+- Node.js 18+
+- npm ou yarn
+- Expo CLI
+- iOS Simulator (Mac) ou Android Emulator
+
+### Instalação
+
+1. **Clone o repositório**
+   ```bash
+   git clone <repository-url>
+   cd Mozio/frontend
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Configure o backend**
+   
+   Edite `lib/api/config.ts` e configure a URL do backend:
+   ```typescript
+   const API_URL = 'http://SEU_IP:4005/api';
+   ```
+
+4. **Inicie o app**
+   ```bash
+   npx expo start
+   ```
+
+5. **Execute no dispositivo**
+   - Pressione `i` para iOS Simulator
+   - Pressione `a` para Android Emulator
+   - Escaneie o QR code com Expo Go no seu dispositivo físico
+
+## 📂 Estrutura do Projeto
+
+```
+frontend/
+├── app/                     # Telas (Expo Router)
+│   ├── (tabs)/             # Navegação por tabs
+│   │   ├── index.tsx       # Home - Feed
+│   │   ├── events.tsx      # Eventos
+│   │   ├── communities.tsx # Comunidades
+│   │   ├── chats.tsx       # Conversas
+│   │   └── profile.tsx     # Perfil
+│   ├── auth/               # Autenticação
+│   │   ├── login.tsx
+│   │   └── register.tsx
+│   ├── event/              # Eventos
+│   │   ├── create.tsx
+│   │   └── [id].tsx
+│   ├── community/          # Comunidades
+│   │   ├── create.tsx
+│   │   └── [id].tsx
+│   ├── notification/       # Notificações
+│   │   └── [id].tsx
+│   └── _layout.tsx
+├── components/             # Componentes reutilizáveis
+│   ├── CountryPicker.tsx
+│   ├── EventCard.tsx
+│   └── ...
+├── screens/               # Telas complexas
+│   ├── EventsScreen.tsx
+│   ├── EventDetailScreen.tsx
+│   └── ...
+├── hooks/                 # Custom hooks
+│   ├── useAuth.ts
+│   ├── useEvents.ts
+│   ├── useCommunity.ts
+│   └── ...
+├── lib/                   # Bibliotecas
+│   └── api/
+│       └── config.ts      # Configuração da API
+├── theme/                 # Sistema de design
+│   └── index.ts
+└── utils/                 # Utilitários
+    ├── countryHelpers.ts
+    └── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design System
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Tema
+- **Suporte a Dark Mode** completo
+- Cores adaptativas para Light/Dark
+- Componentes consistentes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Componentes Principais
+- `EventCard` - Card de evento
+- `CommunityCard` - Card de comunidade
+- `PostCard` - Card de post
+- `CountryPicker` - Seletor de país (193 países)
+- `NotificationCard` - Card de notificação
 
-## Learn More
+## 🛠️ Tecnologias
 
-To learn more about Next.js, take a look at the following resources:
+- **React Native** - Framework mobile
+- **Expo** - Plataforma de desenvolvimento
+- **TypeScript** - Tipagem estática
+- **Expo Router** - Navegação file-based
+- **React Query** - Gerenciamento de estado e cache
+- **Axios** - Cliente HTTP
+- **date-fns** - Manipulação de datas
+- **Expo Image Picker** - Seleção de imagens
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌍 Funcionalidades Especiais
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Filtros de Eventos
+- **Por Data**: Hoje, Esta semana, Este mês, Próximos eventos
+- **Por País**: 193 países disponíveis
+- Badge mostrando filtros ativos
 
-## Deploy on Vercel
+### Sistema de Notificações
+- Notificações tipadas por ação
+- Ícones específicos por tipo
+- Confirmação antes de aceitar/rejeitar
+- Mensagens de erro detalhadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Detecção de Proximidade
+- Encontre estudantes moçambicanos perto de você
+- Baseado em geolocalização
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎯 Roadmap
+
+- [x] Autenticação
+- [x] Perfis de usuário
+- [x] Feed de posts
+- [x] Comunidades
+- [x] Eventos com filtros
+- [x] Notificações
+- [x] Chat
+- [ ] Notificações push
+- [ ] Modo offline
+- [ ] Busca avançada
+- [ ] Compartilhamento externo
+- [ ] Suporte a vídeos
+- [ ] Stories
+
+## 👥 Contribuir
+
+Contribuições são bem-vindas! Por favor:
+
+1. Fork o projeto
+2. Crie uma branch (`git checkout -b feature/NovaFuncionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+## 💬 Contato
+
+**Mozio** - Conectando estudantes moçambicanos pelo mundo 🇲🇿✨
+
+---
+
+Desenvolvido com ❤️ para a comunidade estudantil moçambicana

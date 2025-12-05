@@ -58,7 +58,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-foreground mb-4">Legal</h3>
             <div className="flex flex-col gap-2">
-              <Link href="#" className="text-muted-foreground hover:text-foreground text-sm">
+              <Link href="/privacy" className="text-muted-foreground hover:text-foreground text-sm">
                 Privacy
               </Link>
               <Link href="#" className="text-muted-foreground hover:text-foreground text-sm">
